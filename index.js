@@ -40,9 +40,10 @@ function showtemperature(response) {
   document.querySelector("#feeling").innerHTML =
     response.data.weather[0].main;
   document.querySelector("#wind").innerHTML = `Wind: ${Math.round(
-    response.data.wind.speed)} m/s`;
+    response.data.wind.speed)} km/h`;
   document.querySelector("#humidity").innerHTML = `Humidity: ${Math.round(
     response.data.main.humidity)} %`;
+   
 }
 
 function searchCity(city) {
@@ -61,23 +62,7 @@ function handleSubmit(event) {
 
 //END of Search input
 
-//Temp C to F - vice versa
-function convertToFahrenheit(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = `${66}°F`;
-}
-let convertTemptoFahrenheitButton = document.querySelector("#fahrenheit-link");
-convertTemptoFahrenheitButton.addEventListener("click", convertToFahrenheit);
 
-function convertToCelcius(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = `${25}°C`;
-}
-let convertTempToCelciusButton = document.querySelector("#celcius-link");
-convertTempToCelciusButton.addEventListener("click", convertToCelcius);
-//END of Temp C to F
 
 //Current location
 function searchLocation(position) {
