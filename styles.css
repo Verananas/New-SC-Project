@@ -20,6 +20,9 @@ body {
     text-align: center;
     margin: 20px;
     padding: 0;
+  }
+
+  .description:first-letter {
     text-transform: capitalize;
   }
 
@@ -106,10 +109,6 @@ body {
     padding: 15px;
   }
 
-  .row {
-    padding: 80px;
-  }
-  
   .temperature {
     color: #212121;
     font-weight: 300;
@@ -117,7 +116,6 @@ body {
     font-weight: 500;
     font-size: 80px;
     line-height: 1;
-    padding: 50px 0 30px 0;
   }
   
   .units {
@@ -139,8 +137,7 @@ body {
   .outfit {
     font-size: 120px;
     text-align: center;
-    padding: 14px;
-  }
+    }
   
   .row {
     padding: 20px;
@@ -157,8 +154,4 @@ body {
   .card-title {
     font-size: 18px;
     border: none;
-  }
-
-  .weather-temperature {
-    margin-top: 60px;
   }
