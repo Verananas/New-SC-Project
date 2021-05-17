@@ -62,9 +62,7 @@ function handleSubmit(event) {
  
 }
 
-
 //END of Search input
-
 
 
 //Current location
@@ -86,7 +84,7 @@ currentLocationBtn.addEventListener("click", getPosition);
 
 //END - Current location
 
-let searchForm = document.querySelector("#search-form");
-searchForm.addEventListener("submit", handleSubmit);
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
 
 searchCity("Amsterdam");

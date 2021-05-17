@@ -35,19 +35,10 @@ body {
     max-width: 800px;
   }
 
-  .form-search {
-    width: 100%;
-    text-align: left;
-    border: 2px solid black;
-    padding: 14px 20px;
-    font-size: 16px;
-    cursor: pointer;
-  }
+
   .btn {
-    width: 85%;
     text-align: center;
     border: 2px solid black;
-    padding: 14px 20px;
     font-size: 16px;
     cursor: pointer;
   }
