@@ -32,7 +32,7 @@
             </div>
             <div class="col-3">
               <button 
-              class="btn btn-primary" 
+              class="btn btn-primary btn-lg" 
               id="button-search" 
               value="Search">
                 Search
@@ -41,9 +41,9 @@
             <div class="col-3">
               <button
                 type="submit"
-                class="btn btn-current"
+                class="btn btn-current btn-lg"
                 id="location-button">
-                Here
+                Current location
               </button>
             </div>
             </div>
@@ -57,33 +57,29 @@
       </div>
         <div class="row">
           <div class="col-6">
-            <div class="weather-logo">
+            <div class="weather-temp">
               <img 
               src=""
               alt="logo"
               id="icon"
               class="float-left"
               />
-              <div class="weather-temperature">
-                <div class="temperature" id="temperature"></div>
-                      <div class="description" id="description-info">
-                        <ul class="description-details">
-                          <li id="humidity">Humidity:</li>
-                          <li id="wind">Wind:</li>
-                        </ul>
-                      </div>
+                <div class="float-left" id="temperature">
+                  <div class="degree-unit">
+                    <a href="#" id="celsius-link" class="active">°C |</a>
+                    <a href="#" id="fahrenheit-link">°F</a>
+                  </div>
+                </div>
               </div>
-            </div>
-         </div>
-          <div class="col-6">
-            <div class="weather-outfit">
-              <div class="outfit">
-                👗
-              </div>
-              <button class="button-recommendation" id="button-choicie">
-                More outfit
           </div>
-        </div>
+          <div class="col-6">
+            <div class="description" id="description-info">
+              <ul class="description-details">
+                <li id="humidity">Humidity:</li>
+                <li id="wind">Wind:</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         <div class="row">
