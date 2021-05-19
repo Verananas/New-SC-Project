@@ -84,21 +84,22 @@ body {
     margin-left: 20px;
     float: left;
     font-weight: 500;
-    font-size: 80px;
-    line-height: 1;
+    font-size: 62px;
+    line-height: 2;
   }
   
   .weather-temp .degree-unit {
     font-size: 32px;
       }
-  
-  li .description-details {
-    text-align: right;
-    font-size: 24px;
- }
-  
+ 
+ .description-details {
+    text-align: left;
+    line-height: 1;
+      }
+
  .card {
    padding: 12px;
+   border-radius: 10px;
    
  }
 
