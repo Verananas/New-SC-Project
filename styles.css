@@ -85,7 +85,7 @@ body {
     float: left;
     font-weight: 500;
     font-size: 62px;
-    line-height: 2;
+    line-height: 1.7;
   }
   
   .weather-temp .degree-unit {
