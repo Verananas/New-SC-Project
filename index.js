@@ -68,10 +68,8 @@ function handleSubmit(event) {
 
 //Current location
 function searchLocation(position) {
-  let units = "metric";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?appid=${apiKey}&lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=metric`;
   let apiKey = "399ff45c03a251124e8dcb5fc815948d";
-  console.log(apiUrl);
   axios.get(apiUrl).then(showtemperature);
 
 }
@@ -96,7 +94,6 @@ function getPosition(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
-//
 
 let currentLocationBtn = document.querySelector("#location-button");
 currentLocationBtn.addEventListener("click", getPosition);

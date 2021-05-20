@@ -89,8 +89,8 @@ body {
   }
   
   .weather-temp .degree-unit {
-    font-size: 32px;
-      }
+    font-size: 18px;
+}
  
  .description-details {
     text-align: left;
