@@ -89,7 +89,11 @@ body {
   }
   
   .weather-temp .degree-unit {
-    font-size: 18px;
+    font-size: 16px;
+    position: relative;
+    top: -80px;
+    left: 80px;
+
 }
  
  .description-details {
