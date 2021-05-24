@@ -34,6 +34,7 @@ dateElement.innerHTML = formatDate(currentTime);
 //Search input
 function showtemperature(response) {
   console.log(response.data);
+  celsiusTemperature = response.data.main.temp;
   document.querySelector("#city").innerHTML = `Weather in ${response.data.name}`;
   document.querySelector("#temperature").innerHTML = `${Math.round(celsiusTemperature)}`;
   document.querySelector("#description").innerHTML =
@@ -47,7 +48,7 @@ function showtemperature(response) {
   iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`)
   iconElement.setAttribute("alt", response.data.weather[0].description )
 
-  celsiusTemperature = response.data.main.temp;
+  
 }
 
 function searchCity(city) {
