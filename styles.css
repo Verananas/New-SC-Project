@@ -109,16 +109,26 @@ body {
     line-height: 1;
       }
 
- .card {
-   padding: 12px;
-   border-radius: 10px;
-   
- }
 
-  .card-title {
-    font-size: 18px;
-    border: none;
+
+  .weather-forecast {
+    text-align: center;
   }
 
+  .card {
+    padding: 12px;
+    border-radius: 10px;
+    
+  }
+ 
+  .weather-forecast-date {
+    font-size: 18px;
+  }
 
+  .weather-forecast-temperature {
+    font-size: 16px;
+  }
 
+  .weather-forecast-temperature-min {
+    opacity: 0.5;
+  }
