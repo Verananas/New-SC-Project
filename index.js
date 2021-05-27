@@ -84,7 +84,7 @@ function getForecast(coordinates) {
 function showtemperature(response) {
   console.log(response.data);
   celsiusTemperature = response.data.main.temp;
-  document.querySelector("#city").innerHTML = `Weather in ${response.data.name}`;
+  document.querySelector("#city").innerHTML = `Weather in ${response.data.name} today`;
   document.querySelector("#temperature").innerHTML = `${Math.round(celsiusTemperature)}`;
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
@@ -124,23 +124,6 @@ function searchLocation(position) {
     axios.get(apiUrl).then(showtemperature);
   }
 
-
-// C to F conversion
-function displayFahrenheit(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
-}
-
-
-// F to C conversion
-function displayCelsius(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = Math.round(celsiusTemperature);
-}
-
 function getPosition(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
@@ -149,18 +132,8 @@ function getPosition(event) {
 let currentLocationBtn = document.querySelector("#location-button");
 currentLocationBtn.addEventListener("click", getPosition);
 
-let celsiusTemperature = null;
-
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
-
-
-let fahrenheitLink =  document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", displayFahrenheit);
-
-let celsiusLink =  document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", displayCelsius);
-
 
 searchCity("Amsterdam");
 displayForecast();
