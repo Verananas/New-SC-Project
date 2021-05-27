@@ -33,7 +33,7 @@ dateElement.innerHTML = formatDate(currentTime);
 
 //Forescast
 function displayForecast(response) {
-  console.log(response.data);
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
 
   let days = ["Thu", "Fri", "Sat", "Sun", "Mond", "Tue"];

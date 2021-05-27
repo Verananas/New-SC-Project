@@ -1,5 +1,6 @@
 body {
   font-family: arial, sans-serif;
+  background-color: #fffde7 ;
 }
 
   h1 {
@@ -28,9 +29,9 @@ body {
 
   .full-page {
     margin: 40px auto;
-    background-color: #f2fedc;
+    background-color: #ffef96;
     padding: 15px;
-    border: 2px solid #000;
+    border: 2px solid #fff59d;
     border-radius: 10px;
     max-width: 800px;
   }
@@ -90,6 +91,7 @@ body {
   
   .weather-temp .degree-unit {
     font-size: 16px;
+    text-decoration: none;
     position: relative;
     top: -80px;
     left: 80px;
