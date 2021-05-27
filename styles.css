@@ -17,7 +17,7 @@ body {
   .full-page {
     margin: 20px auto;
     background-color: #ffef96;
-    padding: 0 15px;
+    padding: 20px 20px 0 20px;
     border: 2px solid #fff59d;
     border-radius: 10px;
     max-width: 800px;
@@ -30,6 +30,8 @@ body {
     cursor: pointer;
   }
   .btn-primary {
+    height:39px;
+    width:150px;
     background-color: #04aa6d;
     border-color: #04aa6d;
   }
@@ -38,7 +40,10 @@ body {
     border-color: #2196f3;
   }
   .btn-current {
-    float: left;
+    height:39px;
+    width:150px;
+    position: relative;
+    left: -23px;
     background-color: pink;
     border-color: pink;
   }
@@ -66,7 +71,7 @@ body {
   }
 
   .overview {
-    margin: 20px;
+    margin: 30px 0 0 0;
   }
   .datum {
     font-size: 30px;
@@ -80,9 +85,6 @@ body {
     width: 100px;
   }
 
-  .row {
-    padding: 20px;
-  }
 
   .float-left {
     display: block;
@@ -120,6 +122,7 @@ body {
 
 
   .weather-forecast {
+    padding: 5px 5px 10px 5px;
     text-align: center;
   }
 
@@ -151,4 +154,8 @@ body {
     font-size: small;
     text-align: center;
     padding: 10px;
+    }
+
+    .full-page .avatar {
+      max-width: 50px;
     }
