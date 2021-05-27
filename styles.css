@@ -142,7 +142,13 @@ body {
     opacity: 0.5;
   }
 
+   hr {
+     margin: 5px;
+     opacity: 0.1;
+   } 
+
   footer {
     font-size: small;
     text-align: center;
+    padding: 10px;
     }
