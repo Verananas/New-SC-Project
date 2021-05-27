@@ -17,83 +17,80 @@
 
   <body>
     <div class="app">
-    <div class="container">
-      <div class="full-page">
-        <form id="search-form" class="mb-3">
-          <div class="row">
-            <div class="col-6">
-              <input
-                type="text"
-                placeholder="Enter a destination"
-                autofocus="on"
-                autocomplete="off"
-                id="city-input"
-                class="form-control"
-              />
-            </div>
-            <div class="col-3">
-              <button 
-              class="btn btn-primary btn-lg" 
-              id="button-search" 
-              value="Search">
-                Search
-              </button>
-            </div>
-            <div class="col-3">
-              <button
-                type="submit"
-                class="btn btn-current btn-lg"
-                id="location-button">
-                Current location
-              </button>
-            </div>
+      <div class="container">
+        <div class="full-page">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-6">
+                <input
+                  type="text"
+                  placeholder="Enter a destination"
+                  autofocus="on"
+                  autocomplete="off"
+                  id="city-input"
+                  class="form-control"
+                />
+              </div>
+              <div class="col-3">
+                <button
+                  class="btn btn-primary btn-lg"
+                  id="button-search"
+                  value="Search"
+                >
+                  Search
+                </button>
+              </div>
+              <div class="col-3">
+                <button
+                  type="submit"
+                  class="btn btn-current btn-lg"
+                  id="location-button"
+                >
+                  Current location
+                </button>
+              </div>
             </div>
           </form>
-      <div class="overview">
-        <h1 id="city"></h1>
-        <ul>
-          <li class="datum" id="date"></li>
-          <li class="description" id="description"></li>
-        </ul>
-      </div>
-        <div class="row">
-          <div class="col-6">
-            <div class="weather-temp">
-              <img 
-              src=""
-              alt="logo"
-              id="icon"
-              class="float-left"
-              />
-               <div class="float-left">
-                    <span id="temperature"></span>
-                    <div class="degree-unit">°C</a>
-                    </div>
-                  </div>
-              </div>
+          <div class="overview">
+            <h1 id="city"></h1>
+            <ul>
+              <li class="datum" id="date"></li>
+              <li class="description" id="description"></li>
+            </ul>
           </div>
-          <div class="col-6">
-            <div class="description" id="description-info">
-              <ul class="description-details">
-                <li id="humidity">Humidity:</li>
-                <li id="wind">Wind:</li>
-              </ul>
+          <div class="row">
+            <div class="col-6">
+              <div class="weather-temp">
+                <img src="" alt="logo" id="icon" class="float-left" />
+                <div class="float-left">
+                  <span id="temperature"></span>
+                  <div class="degree-unit">°C</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="description" id="description-info">
+                <ul class="description-details">
+                  <li id="humidity">Humidity:</li>
+                  <li id="wind">Wind:</li>
+                </ul>
+              </div>
             </div>
           </div>
+          <div class="weather-forecast" id="forecast"></div>
+          <hr />
+          <footer>
+            This app is an
+            <a
+              href="https://github.com/Verananas/New-SC-Project"
+              target="_blank"
+              >open-source project </a
+            >coded by Vera Bakalli
+            <img src="src/Vera.avatar.png" class="avatar" alt="Vera Bakalli" />
+          </footer>
         </div>
-        <div class="weather-forecast" id="forecast"></div>
-        <hr>
-        <footer>This app is an <a href="https://github.com/Verananas/New-SC-Project" target="_blank" >open-source project </a>coded by Vera Bakalli
-        <img 
-        src= "src/Vera.avatar.png"
-        class="avatar"
-        alt="Vera Bakalli" />
-      </footer>        
-
       </div>
     </div>
-  </div>
-    </div>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
