@@ -134,3 +134,9 @@ body {
   .weather-forecast-temperature-min {
     opacity: 0.5;
   }
+
+  footer {
+    font-size: small;
+    text-align: center;
+    padding: 5px;
+  }
